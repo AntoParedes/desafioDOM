@@ -85,7 +85,7 @@ let cards = document.getElementById("card");
 for (const producto of productosEnVenta){
     let contenedorCard = document.createElement("div");
     contenedorCard.innerHTML=
-    `<img src=" ${producto.img}">   
+    `<img src=" ${producto.img}" width="200" height="200">   
     <h3> ${producto.nombre}</h3>
     <p> ${producto.precio}</p>
     <button>Agregar al carrito</button>`;
