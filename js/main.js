@@ -30,7 +30,7 @@ const carrito = []
 
 function agregarAlCarrito(idProducto){
     const producto = productosEnVenta.find((productosEnVenta) => productosEnVenta.id === idProducto);
-    if (producto != -1){
+    if (producto != undefined){
     carrito.push(producto);
     console.log(carrito);
     }else{
@@ -51,7 +51,7 @@ agregarAlCarrito(001)
 
 function eliminarDelCarrito(idProducto){
 const index = carrito.findIndex((producto) => producto.id === idProducto);
-if (index != "undefined"){
+if (index != -1){
     carrito.splice(index,1)
     console.log(carrito)
 }else{
